@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Site Properities -->
+    <title>千メモ公式サイト</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script type="text/javascript" >
+    $(document).ready(function() {
+        $('.navs .nav.btn').transition('toggle');
+    });
+    $(window).load(function() {
+        setTimeout(function() {
+            $('body').removeClass('unresolved');
+        }, 2000);
+        setTimeout(function() {
+            $('.wheel.image').transition('fly down in');
+        }, 3000);
+        setTimeout(function() {
+
+            $('.transition-groups.image')
+                .transition({
+                    animation: 'scale in',
+                    duration: 800,
+                    interval: 400,
+                    onStart: function() {
+                    },
+                    onComplete: function() {
+
+                    }
+                });
+
+            $('.chara.sub.image').transition({
+                animation: 'fly down in',
+                duration: 800
+            }).transition('fade out');
+
+        }, 4000);
+        setTimeout(function() {
+            $('.navs .nav.btn')
+                .transition('scale');
+        }, 5500);
+
+        /* Segment Intro */
+        $('.segment').visibility({
+          onTopVisible: function( ) {
+            $(this).transition({
+                animation: 'fly up in',
+                duration: 1000
+              });
+            var that = $(this);
+
+            setTimeout( function( ) {
+              
+            }, 1000);
+          }
+        });
+        
+        // Scrolling Down Dimmer
+        $('.pusher').visibility({
+            once: false,
+            continuous: true,
+            onPassing: function(calculations) {
+                var newColor = 'rgba(0, 0, 0, ' + calculations.percentagePassed + ')';
+                $(this)
+                    .css('background-color', newColor);
+            }
+        });
+    });
+    /*    $(document)
+      .ready(function() {
+
+          // fix menu when passed
+          $('.masthead')
+              .visibility({
+                  once: false,
+                  onBottomPassed: function() {
+                      $('.fixed.menu').transition('fade in');
+                  },
+                  onBottomPassedReverse: function() {
+                      $('.fixed.menu').transition('fade out');
+                  }
+              });
+
+          // create sidebar and attach to menu open
+          $('.ui.sidebar')
+              .sidebar('attach events', '.toc.item');
+
+      });*/
+    </script>
+    <!-- Style Sheet -->
+    <!-- <link rel="stylesheet" type="text/less" href="less/styles.less"> -->
+    <link rel="stylesheet" type="text/less" href="css/styles.css">
+    <!-- <script src="node_modules/gulp-less/node_modules/less/dist/less.min.js"></script> -->
+</head>
+
+<body class="unresolved">
+    <!-- Following Menu -->
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="toc active item">Home</a>
+            <a class="item">Work</a>
+            <a class="item">Company</a>
+            <a class="item">Careers</a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui button">Log in</a>
+                </div>
+                <div class="item">
+                    <a class="ui primary button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="active item">Home</a>
+        <a class="item">Work</a>
+        <a class="item">Company</a>
+        <a class="item">Careers</a>
+        <a class="item">Login</a>
+        <a class="item">Signup</a>
+    </div>
+    <!-- Page Contents -->
+    <div class="pusher">
+        <div class="ui vertical center aligned masthead segment">
+            <img class="top background image" src="images/bg/top_bg.png" alt="">
+            <div class="ui game logo fluid equal width grid container">
+                <div class="row">
+                    <div class="column">
+                        <!-- <img class="chara sub image" src="images/masthead/top_bg_removal.png" alt=""> -->
+                        <img class="chara transition-groups transition hidden image" src="images/masthead/top_bg_removal.png" alt="">
+                    </div>
+                    <div class="column">
+                        <div class="row">
+                            <div class="column">
+                                <img class="logo transition-groups transition hidden image" src="images/masthead/top_logo.png" alt="">
+                            </div>
+                            <div class="column">
+                                <a class="pull left" href=""><img class="app transition-groups transition hidden image" src="images/app_as.png" alt=""></a>
+                                <a class="pull left" href=""><img class="app transition-groups transition hidden image" src="images/app_gp.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wheel images">
+                <img class="left wheel  transition hidden image" src="images/masthead/wheel_l.png" alt="">
+                <img class="right wheel  transition hidden image" src="images/masthead/wheel_r.png" alt="">
+            </div>
+            <script>
+            </script>
+        </div>
+        <div class="ui vertical nav segment">
+            <div class="ui center aligned container">
+                <div class="navs">
+                    <a class="nav btn"></a>
+                    <a class="nav btn"></a>
+                    <a class="nav btn"></a>
+                    <a class="nav btn"></a>
+                    <a class="nav btn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical about segment">
+            <div class="ui  center aligned  grid container">
+                <div class=" row">
+                    <div class="column">
+                        <img src="images/ttl/ttl_pcabout.png" alt="">
+                    </div>
+                </div>
+                <div class="  row">
+                    <div class="column">
+                        <img src="images/introduce/pcabout.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical video segment">
+            <div class="ui  center aligned  grid container">
+                <div class="row">
+                    <div class="column">
+                        <img src="images/ttl/ttl_pcmovie.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/introduce/pcprmovie.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical character segment">
+            <div class="ui stackable center aligned  grid container">
+                <div class="row">
+                    <div class="column">
+                        <img src="images/ttl/ttl_pcchara.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="ui grid">
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_arthur.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_drake.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_toto.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_lupina.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_apolo.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_nicole.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_laufa.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_ferisia.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_lanslott.png" alt=""></div>
+                            <div class="four wide column"><img class="image chara" src="images/introduce/chara_nevia.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui  vertical news segment">
+            <div class="ui equal width stackable internally celled grid container">
+                <div class="center aligned row" style="letter-spacing: 5px">
+                    <div class="column">
+                        <h1>最新のおしらせ</h1></div>
+                    <div class="column">
+                        <h1>Twitter</h1></div>
+                </div>
+                <div class="center aligned row">
+                    <div class="column">
+                        <p>
+                            news + twitter
+                        </p>
+                    </div>
+                    <div class="column">
+                        <iframe id="twitter-widget-i1440432256307697677" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-timeline twitter-timeline-rendered" allowfullscreen="true" style="position: static; visibility: visible; width: 520px; height: 529px; padding: 0px; border: none; display: block; min-width: 180px; max-width: 100%; min-height: 200px; margin-top: 0px; margin-bottom: 0px;" data-widget-id="458181835973857280" data-user-id="2173360302" title="Twitterタイムライン"></iframe>
+                        <script>
+                        ! function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui  vertical store segment">
+            <div class="ui  middle aligned  stackable grid container">
+                <div class="black row">
+                    <div class="right aligned three wide column">
+                        <img src="images/favicon.png" alt="">
+                    </div>
+                    <div class="left aligned  eight wide column">
+                        <p>タイトル：サウザンドメモリーズ（千メモ）
+                            <br> 配信時期：2013年11月22日
+                            <br>ジャンル：キャラリンクRPG
+                            <br>価格：無料（アイテム課金あり）
+                        </p>
+                    </div>
+                    <div class=" five wide column">
+                        <a href="https://itunes.apple.com/jp/app/sauzandomemorizu-kyararinkurpg/id729234712?mt=8"><img src="images/app_as.png" height="64" width="216" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=jp.aktsk.memories"><img src="images/app_gp.png" height="64" width="181" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui  vertical footer segment">
+            <div class="ui center aligned container">
+                <div class="ui stackable  divided equal height stackable grid">
+                    <div class="row">
+                        <div class="column">
+                            <img src="images/masthead/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="eight wide column">
+                            <p>©2015 Akatsuki Inc. All rights reserved.</p>
+                        </div>
+                        <div class="eight wide column">
+                            <div class="ui horizontal   link list">
+                                <a href="#" class="item">プレスリリース </a>
+                                <a href="#" class="item">お知らせ</a>
+                                <a href="#" class="item">お問合せ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui brandview segment">
+            <div class="ui center aligned fluid container">
+                <div class="rainbow"></div>
+                <img class="small logo image" src="images/logo.gif" alt="">
+                <script>
+                $(document).ready(function() {
+                    $('.brandview.segment')
+                        .visibility({
+                            continuous: true,
+                            onBottomVisible: function(calculations) {
+                                console.log(calculations);
+                                $('.small.logo').transition('set looping ').transition({
+                                    animation: 'bounce',
+                                    interval: 5000,
+                                    duration: 2000,
+                                    onStart: function() {
+                                        console.log('bounce!!');
+                                    }
+                                });
+                            },
+                            onBottomVisibleReverse: function(calculations) {
+                                $('.small.logo').transition('remove looping ');
+                            }
+                        });
+                });
+                </script>
+                <p class="wakuwaku slogan">毎日をもっとワクワクさせるサービスを正解の皆の手の中に。</p>
+                <img class="cute-players image" src="images/bg_footer_01.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

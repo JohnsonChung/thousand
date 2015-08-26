@@ -1,0 +1,21 @@
+/* Akatsuki Rainbow */
+.rainbow {
+  height: 2em;
+  margin-top: -21px;
+  background: #46b035;
+  /* Old Browsers */
+  background: -moz-linear-gradient(left, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(left top, right top, color-stop(0%, #46b035), color-stop(9%, #46b035), color-stop(10%, #8ec31f), color-stop(19%, #8ec31f), color-stop(20%, #fdd000), color-stop(29%, #fdd000), color-stop(30%, #f39700), color-stop(39%, #f39700), color-stop(40%, #e8392f), color-stop(49%, #e8392f), color-stop(50%, #d95097), color-stop(59%, #d95097), color-stop(60%, #92318d), color-stop(69%, #92318d), color-stop(70%, #0085cd), color-stop(79%, #0085cd), color-stop(80%, #00a7e4), color-stop(89%, #00a7e4), color-stop(90%, #009d85), color-stop(100%, #009d85));
+  /* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(left, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* IE 10+ */
+  background: linear-gradient(to right, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#46b035', endColorstr='#009d85', GradientType=1);
+  /* IE6-9 */
+}

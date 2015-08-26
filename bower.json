@@ -1,0 +1,20 @@
+{
+  "name": "senmemo",
+  "version": "1.0.0",
+  "homepage": "",
+  "authors": [
+    "JohnsonChung <johnson780510@gmail.com>"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lesshat": "~3.0.2",
+    "BigVideo.js": "~1.1.5"
+  }
+}

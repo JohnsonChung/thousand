@@ -1,0 +1,298 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);
+/* Custom Styles */
+body {
+  font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.nopadding {
+  padding: 0 0 !important;
+}
+/* Akatsuki Rainbow */
+.rainbow {
+  height: 2em;
+  margin-top: -21px;
+  background: #46b035;
+  /* Old Browsers */
+  background: -moz-linear-gradient(left, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(left top, right top, color-stop(0%, #46b035), color-stop(9%, #46b035), color-stop(10%, #8ec31f), color-stop(19%, #8ec31f), color-stop(20%, #fdd000), color-stop(29%, #fdd000), color-stop(30%, #f39700), color-stop(39%, #f39700), color-stop(40%, #e8392f), color-stop(49%, #e8392f), color-stop(50%, #d95097), color-stop(59%, #d95097), color-stop(60%, #92318d), color-stop(69%, #92318d), color-stop(70%, #0085cd), color-stop(79%, #0085cd), color-stop(80%, #00a7e4), color-stop(89%, #00a7e4), color-stop(90%, #009d85), color-stop(100%, #009d85));
+  /* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(left, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* IE 10+ */
+  background: linear-gradient(to right, #46b035 0%, #46b035 9%, #8ec31f 10%, #8ec31f 19%, #fdd000 20%, #fdd000 29%, #f39700 30%, #f39700 39%, #e8392f 40%, #e8392f 49%, #d95097 50%, #d95097 59%, #92318d 60%, #92318d 69%, #0085cd 70%, #0085cd 79%, #00a7e4 80%, #00a7e4 89%, #009d85 90%, #009d85 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#46b035', endColorstr='#009d85', GradientType=1);
+  /* IE6-9 */
+}
+.filter.brightness {
+  -webkit-filter: brightness(10) !important;
+  transition: all 1s ease-out;
+}
+body {
+  background-color: #161616;
+  background-image: url(../images/bg/bg.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: center 200px  ;
+  /* page onloading */
+}
+body.unresolved {
+  background-position: center 00px  !important;
+}
+body.unresolved .pusher {
+  -webkit-filter: blur(5px) brightness(5);
+}
+body.unresolved::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url(../images/aktsk_circular_logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+body.unresolved .top.background.image {
+  -webkit-filter: contrast(25%) brightness(10);
+}
+.hidden.menu {
+  display: none;
+}
+.about.segment,
+.video.segment,
+.character.segment,
+.news.segment,
+.store.segment {
+  padding-top: 100px !important;
+  visibility: hidden;
+}
+.masthead.segment {
+  padding: 0 0 1em 0em;
+  overflow: hidden;
+}
+.masthead {
+  position: relative;
+  background-color: #1b1c1d;
+}
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  font-size: 2em;
+  font-size: 4em;
+  font-weight: normal;
+  margin-bottom: 0em;
+  margin-top: 1.5em;
+  margin-top: 3em;
+}
+.masthead h2 {
+  font-size: 1.5em;
+  font-size: 1.7em;
+  font-weight: normal;
+  margin-top: 0.5em;
+}
+.masthead .image.background {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  transition: all 1s linear;
+}
+.masthead .wheel.images .left.wheel {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 8%;
+}
+.masthead .wheel.images .right.wheel {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 8%;
+}
+.masthead .game.fluid.grid.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100% !important;
+}
+.masthead .game.fluid.grid.container .chara.image {
+  width: 100%;
+}
+.masthead .game.fluid.grid.container .chara.sub.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -350px;
+  bottom: 0;
+  -webkit-filter: brightness(2);
+}
+.masthead .game.fluid.grid.container .logo.image {
+  width: 100%;
+}
+.masthead .game.fluid.grid.container .pull.left {
+  float: left;
+  margin-left: 20px;
+}
+.nav.segment .navs {
+  /* LESS Loop */
+  /* /LESS loop */
+}
+.nav.segment .navs .nav.btn {
+  display: inline-block;
+  background: url(../images/nav/pc_nav.png);
+  width: 192px;
+  height: 70px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
+.nav.segment .navs .nav.btn:active {
+  -moz-filter: contrast(2) brightness(1.5);
+  -webkit-filter: contrast(2) brightness(1.5);
+  filter: contrast(2) brightness(1.5);
+}
+.nav.segment .navs .btn:nth-child( 1) {
+  background-position: 0px 0;
+}
+.nav.segment .navs .btn:nth-child( 1):hover {
+  background-position: 0px 70px;
+}
+.nav.segment .navs .btn:nth-child( 2) {
+  background-position: 192px 0;
+}
+.nav.segment .navs .btn:nth-child( 2):hover {
+  background-position: 192px 70px;
+}
+.nav.segment .navs .btn:nth-child( 3) {
+  background-position: 384px 0;
+}
+.nav.segment .navs .btn:nth-child( 3):hover {
+  background-position: 384px 70px;
+}
+.nav.segment .navs .btn:nth-child( 4) {
+  background-position: 576px 0;
+}
+.nav.segment .navs .btn:nth-child( 4):hover {
+  background-position: 576px 70px;
+}
+.nav.segment .navs .btn:nth-child( 5) {
+  background-position: 768px 0;
+}
+.nav.segment .navs .btn:nth-child( 5):hover {
+  background-position: 768px 70px;
+}
+.character.segment .image.chara {
+  width: 100%;
+}
+.news.segment {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+.footer.segment {
+  padding: 5em 0em;
+  color: white !important;
+}
+.footer.segment a {
+  color: white !important;
+  text-decoration: underline;
+}
+.secondary.pointing.menu .toc.item {
+  display: block;
+  display: none;
+}
+.secondary.pointing.menu .item {
+  display: none;
+}
+.secondary.pointing.menu .menu {
+  display: none;
+}
+.brandview.segment {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+.brandview.segment .small.logo.image {
+  margin: 58px 0 25px 0;
+}
+.brandview.segment .wakuwaku.slogan {
+  color: #7D7D7D;
+  font-size: 1.3em;
+  letter-spacing: 4px;
+}
+.brandview.segment .cute-players.image {
+  margin-bottom: -5px;
+}
+@media only screen and (min-width: 1521px) {
+  .masthead.segment .image.background {
+    margin-top: -6%;
+    padding-bottom: 6%;
+  }
+  .masthead.segment .chara.image {
+    margin-right: -350px;
+  }
+  .masthead.segment .logo.image {
+    margin-left: -350px;
+  }
+}
+@media only screen and (min-width: 1281px) and (max-width: 1520px) {
+  .masthead.segment .chara.image {
+    margin-right: -250px;
+  }
+  .masthead.segment .logo.image {
+    margin-left: -250px;
+    min-width: 780px;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+  .masthead.segment .chara.image {
+    margin-right: -180px;
+  }
+  .masthead.segment .logo.image {
+    margin-left: -180px;
+    min-width: 780px;
+  }
+  .masthead.segment .app.image {
+    height: 52px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .fluid.container {
+    margin: 0 0 !important;
+  }
+  .masthead.segment {
+    overflow: hidden;
+  }
+  .masthead.segment .chara.image {
+    margin-right: -150px;
+  }
+  .masthead.segment .logo.image {
+    margin-left: -150px;
+    min-width: 580px;
+  }
+  .masthead.segment .app.image {
+    height: 42px;
+  }
+}

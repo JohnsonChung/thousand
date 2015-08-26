@@ -1,0 +1,4 @@
+.filter.brightness {
+  -webkit-filter: brightness(10) !important;
+  transition: all 1s ease-out;
+}
