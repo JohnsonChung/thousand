@@ -296,7 +296,7 @@
                     $('.brandview.segment')
                         .visibility({
                             continuous: true,
-                            onBottomVisible: function(calculations) {
+                            onTopVisible: function(calculations) {
                                 console.log(calculations);
                                 $('.small.logo').transition('set looping ').transition({
                                     animation: 'bounce',
@@ -307,7 +307,7 @@
                                     }
                                 });
                             },
-                            onBottomVisibleReverse: function(calculations) {
+                            onTopVisibleReverse: function(calculations) {
                                 $('.small.logo').transition('remove looping ');
                             }
                         });
