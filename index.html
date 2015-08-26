@@ -205,7 +205,7 @@
                 </div>
                 <div class="row">
                     <div class="column">
-                        <div class="ui grid">
+                        <div class="ui grid chara_introduce">
                             <div class="four wide column"><img class="image chara" src="images/introduce/chara_arthur.png" alt=""></div>
                             <div class="four wide column"><img class="image chara" src="images/introduce/chara_drake.png" alt=""></div>
                             <div class="four wide column"><img class="image chara" src="images/introduce/chara_toto.png" alt=""></div>
@@ -311,6 +311,18 @@
                                 $('.small.logo').transition('remove looping ');
                             }
                         });
+
+                    $(".chara_introduce img.chara").css('visibility', 'hidden');
+                    $(".chara_introduce").visibility({
+                        once: true,
+                        observeChanges: true,
+                        onTopVisible: function() {
+                          $(".chara_introduce img.chara").transition({
+                            animation : 'fly up',
+                            interval  : 200
+                          });
+                        }
+                    });
                 });
                 </script>
                 <p class="wakuwaku slogan">毎日をもっとワクワクさせるサービスを正解の皆の手の中に。</p>
