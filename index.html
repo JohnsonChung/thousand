@@ -143,8 +143,8 @@
                                 <img class="logo transition-groups transition hidden image" src="images/masthead/top_logo.png" alt="">
                             </div>
                             <div class="column">
-                                <a class="pull left" href=""><img class="app transition-groups transition hidden image" src="images/app_as.png" alt=""></a>
-                                <a class="pull left" href=""><img class="app transition-groups transition hidden image" src="images/app_gp.png" alt=""></a>
+                                <a class="pull left store-button" href="https://itunes.apple.com/jp/app/sauzandomemorizu-kyararinkurpg/id729234712?mt=8"><img class="app transition-groups transition hidden image" src="images/app_as.png" alt=""></a>
+                                <a class="pull left store-button" href="https://play.google.com/store/apps/details?id=jp.aktsk.memories"><img class="app transition-groups transition hidden image" src="images/app_gp.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -258,8 +258,8 @@
                         </p>
                     </div>
                     <div class=" five wide column">
-                        <a href="https://itunes.apple.com/jp/app/sauzandomemorizu-kyararinkurpg/id729234712?mt=8"><img src="images/app_as.png" height="64" width="216" alt=""></a>
-                        <a href="https://play.google.com/store/apps/details?id=jp.aktsk.memories"><img src="images/app_gp.png" height="64" width="181" alt=""></a>
+                        <a class="store-button" href="https://itunes.apple.com/jp/app/sauzandomemorizu-kyararinkurpg/id729234712?mt=8"><img src="images/app_as.png" height="64" width="216" alt=""></a>
+                        <a class="store-button" href="https://play.google.com/store/apps/details?id=jp.aktsk.memories"><img src="images/app_gp.png" height="64" width="181" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -322,6 +322,12 @@
                             interval  : 200
                           });
                         }
+                    });
+
+                    $(".store-button").hover(function() {
+                        $(this).transition('pulse');
+                    }, function() {
+
                     });
                 });
                 </script>
